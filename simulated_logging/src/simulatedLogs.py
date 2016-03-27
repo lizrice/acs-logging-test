@@ -61,7 +61,7 @@ def simulate():
     msgQueue.close()
 
     _actions = _actions + 1
-    time.sleep(int(config.SIMULATION_DELAY))
+    time.sleep(float(config.SIMULATION_DELAY))
 
   msg = hostname + ": Simulated " + str(config.SIMULATION_ACTIONS) + " actions and added them to the queue"
   log.debug(msg)
